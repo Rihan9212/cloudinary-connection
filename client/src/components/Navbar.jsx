@@ -1,3 +1,5 @@
+import {NavLink} from 'react-router-dom'
+
 
 const navBar = () => {
   return (
@@ -9,14 +11,17 @@ const navBar = () => {
 
     {/* it is for navbar title */}
       <div>
-      <ul>Home</ul>
-      <ul>Products</ul>
-      <ul>Services</ul>
-      <ul>Contact</ul>
-      <ul>About</ul></div>
+       <NavLink to="/"><ul>Home</ul> </NavLink>
+      <NavLink to="products"><ul>Products</ul> </NavLink>
+      <NavLink to="services"><ul>Services</ul> </NavLink>
+      <NavLink to="contact"><ul>Contact</ul> </NavLink>
+      <NavLink to="about"><ul>About</ul> </NavLink>
+     </div>
 
       {/* it is for login */}
-      <div></div>
+      <div>
+        <h1>Login</h1>
+      </div>
     </div>
   )
 }
